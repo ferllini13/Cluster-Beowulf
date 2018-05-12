@@ -17,6 +17,6 @@ Instituto Tecnológico de Costa Rica
 
 **Integrantes:**
 
-* Francisco Alvarado
-* Frander Granados
+* Francisco Alvarado Ferllini
+* Frander Granados Vega
 * Andrés Arias Vargas
