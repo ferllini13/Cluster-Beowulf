@@ -10,11 +10,11 @@ Para instalar OpenCV ejecutar el script config.sh
 
 Dar permisos: 
 
-$ sudo chmod +x config.sh
+$ sudo chmod +x installOpenCV.sh
 
 Y ejecutarlo: 
 
-$ ./config.sh
+$ ./installOpenCV.sh
 
 ## Información
 Instituto Tecnológico de Costa Rica
