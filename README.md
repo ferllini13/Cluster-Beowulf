@@ -6,6 +6,11 @@ Aplica el filtro Kuwahara.
 ## Dependencias
 Requiere OpenCV 3.4.1.
 
+Para instalar OpenCV ejecutar el script config.sh
+Dar permisos
+$ sudo chmod +x config.sh
+$ ./config.sh
+
 ## Información
 Instituto Tecnológico de Costa Rica
 
