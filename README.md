@@ -8,9 +8,11 @@ Requiere OpenCV 3.4.1.
 
 Para instalar OpenCV ejecutar el script config.sh
 
-Dar permisos
+Dar permisos: 
 
 $ sudo chmod +x config.sh
+
+Y ejecutarlo: 
 
 $ ./config.sh
 
