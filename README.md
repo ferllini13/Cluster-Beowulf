@@ -7,8 +7,11 @@ Aplica el filtro Kuwahara.
 Requiere OpenCV 3.4.1.
 
 Para instalar OpenCV ejecutar el script config.sh
+
 Dar permisos
+
 $ sudo chmod +x config.sh
+
 $ ./config.sh
 
 ## Información
