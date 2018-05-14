@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	// If the master node
 	if (rank == MASTER)
 	{
-		char imagen[] = "fullHD.jpg";
+		char imagen[] = "pic.jpeg";
 
 		Mat src = imread(imagen, IMREAD_GRAYSCALE);
 
@@ -115,7 +115,7 @@ int main(int argc, char *argv[])
 
 		printf("[%s]: trabajando desde la fila %d, hasta %d \n", processor_name, node_start, node_start + node_rows);
 
-		String imagen = "fullHD.jpg";
+		String imagen = "pic.jpeg";
 
 		Mat src = imread(imagen, IMREAD_GRAYSCALE);
 

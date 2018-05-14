@@ -32,7 +32,7 @@ echo "primera descarga completa"
 wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.4.1.zip
 echo "segunda descarga completa, se procede a la compilacion"
 unzip opencv.zip
-opencv-3.4.1/ opencv
+mv opencv-3.4.1/ opencv
 mv opencv /opt/
 unzip opencv_contrib.zip
 mv opencv_contrib-3.4.1/ opencv_contrib
