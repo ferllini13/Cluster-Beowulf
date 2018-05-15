@@ -10,8 +10,8 @@ cluster: $(OBJS)
 	$(CC) $(LFLAGS) ./build/cluster $(OBJS) $(LIBS)
 	rm *.o
 
-main.o: main.c
-	$(CC) $(CFLAGS) main.c 
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
 
 make clean:
 	rm ./build/cluster
