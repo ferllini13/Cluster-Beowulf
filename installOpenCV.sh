@@ -26,6 +26,9 @@ else
     echo "Correctly authenticated."
 fi
 
+echo "instalando dependencias"
+sudo apt-get update && sudo apt-get install cmake gcc g++
+
 echo "Se descargan paquetes de OpenCV para la instalacion"
 wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.1.zip
 echo "primera descarga completa"
@@ -33,12 +36,12 @@ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.4.
 echo "segunda descarga completa, se procede a la compilacion"
 unzip opencv.zip
 mv opencv-3.4.1/ opencv
-mv opencv /opt/
+sudo mv opencv /opt/
 unzip opencv_contrib.zip
 mv opencv_contrib-3.4.1/ opencv_contrib
-mv opencv_contrib /opt/
+sudo mv opencv_contrib /opt/
 cd /opt/opencv
-sudo mkdir release && cd release
+mkdir release && cd release
 sudo cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv/
 sudo make -j4
 sudo make install
